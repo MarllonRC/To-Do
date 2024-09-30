@@ -18,17 +18,10 @@ Este projeto é uma aplicação web de lista de tarefas (To-Do List) desenvolvid
 - **CSS**: Estilização e layout responsivo.
 - **JavaScript**: Funcionalidade e interação do usuário.
 
-## Como Usar
+## Visualize o Projeto
 
-1. Clone este repositório ou faça o download dos arquivos.
-2. Abra o arquivo `index.html` em seu navegador.
-3. Comece a adicionar suas tarefas!
-
-## Contribuição
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
+Você pode acessar a aplicação em: [To-Do List Web App](LINK_PARA_O_SEU_SITE)
 
 ## Licença
 
 Este projeto está licenciado sob a MIT License. Veja o arquivo `LICENSE` para mais detalhes.
-
