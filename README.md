@@ -20,7 +20,7 @@ Este projeto é uma aplicação web de lista de tarefas (To-Do List) desenvolvid
 
 ## Visualize o Projeto
 
-Você pode acessar a aplicação em: [To-Do List Web App](LINK_PARA_O_SEU_SITE)
+Você pode acessar a aplicação em: [To-Do List Web App](https://marllonrc.github.io/To-Do/)
 
 ## Licença
 
