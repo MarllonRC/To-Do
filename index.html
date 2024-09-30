@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Minha To-Do List</h1>
+    </header>
+    <form id="task-form">
+        <label for="task-input">Tarefa:</label>
+        <input type="text" id="task-input" required>
+
+        <label for="task-category">Categoria:</label>
+        <select id="task-category" required>
+            <option value="" disabled selected>Selecione uma categoria</option>
+            <option value="Trabalho">Trabalho</option>
+            <option value="Estudos">Estudos</option>
+            <option value="Pessoal">Pessoal</option>
+            <option value="Casa">Casa</option>
+            <option value="Saúde">Saúde</option>
+        </select>
+
+        <label for="task-deadline">Data de Vencimento:</label>
+        <input type="date" id="task-deadline" required>
+
+        <label for="task-priority">Prioridade:</label>
+        <select id="task-priority">
+            <option value="baixa">Baixa</option>
+            <option value="media">Média</option>
+            <option value="alta">Alta</option>
+        </select>
+
+        <label for="task-description">Descrição:</label>
+        <textarea id="task-description" rows="3"></textarea>
+
+        <label for="task-recurring">Recorrência:</label>
+        <select id="task-recurring">
+            <option value="nenhuma">Nenhuma</option>
+            <option value="diaria">Diária</option>
+            <option value="semanal">Semanal</option>
+            <option value="mensal">Mensal</option>
+        </select>
+
+        <div class="button-container">
+            <button type="button" id="add-task">Adicionar Tarefa</button>
+        </div>
+    </form>
+
+    <ul id="task-list"></ul>
+    <div id="productivity-stats"></div>
+    <input type="text" id="search-input" placeholder="Buscar tarefa...">
+
+    <button id="toggle-completed-tasks">Mostrar Tarefas Concluídas</button>
+    <div id="completed-tasks" style="display: none;"></div> <!-- Seção oculta -->
+    <div id="notification" class="notification" style="display: none;"></div> <!-- Pop-up de notificação -->
+
+    <script src="javascript.js"></script>
+</body>
+</html>

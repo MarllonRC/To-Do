@@ -1,0 +1,168 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #4a90e2;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+input, textarea, select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #357ab8;
+    transform: scale(1.05);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    margin: 5px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: translateY(-2px);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+#productivity-stats {
+    margin-top: 20px;
+}
+
+.notification-toggle {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 20px;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-label {
+    background-color: #ccc;
+    padding: 10px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 10px;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+    background-color: #4a90e2;
+    color: white;
+}
+
+#search-input {
+    margin-top: 20px;
+}
+
+.delete-button {
+    margin-left: 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+.complete-button {
+    margin-left: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.complete-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+#completed-tasks {
+    margin-top: 20px;
+    background-color: #e0f7fa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #b2ebf2;
+}
+
+.completed-task {
+    text-decoration: line-through;
+    color: gray;
+}
+
+@media (max-width: 600px) {
+    form {
+        flex-direction: column;
+    }
+
+    input, textarea, select {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
